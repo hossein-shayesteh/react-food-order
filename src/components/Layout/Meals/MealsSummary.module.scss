@@ -1,0 +1,17 @@
+@import "../../../assets/scss/mixin";
+.summary {
+  @include rectangle(90%, auto);
+  max-width: 45rem;
+  text-align: center;
+  margin: -10rem auto 0;
+  padding: 1rem;
+  position: relative;
+  background-color: var(--dark-gray);
+  color: white;
+  border-radius: 14px;
+  box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.25);
+  h2 {
+    font-size: 2rem;
+    margin-top: 0;
+  }
+}

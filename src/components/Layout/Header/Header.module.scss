@@ -1,0 +1,22 @@
+@import "../../../assets/scss/mixin";
+.header {
+  @include position(fixed, 0, 0, null, 0);
+  @include rectangle(100%, 5rem);
+  @include flex(space-between, center);
+  background-color: var(--orange);
+  color: white;
+  padding: 0 10%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+}
+
+.main-image {
+  @include rectangle(100%, 25rem);
+  z-index: 0;
+  overflow: hidden;
+  img {
+    @include square(100%);
+    object-fit: cover;
+    transform: rotateZ(-5deg) translateY(-4rem) translateX(-1rem);
+  }
+}

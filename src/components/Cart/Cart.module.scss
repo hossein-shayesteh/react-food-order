@@ -1,0 +1,44 @@
+@import "../../assets/scss/mixin";
+.cart-items {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 20rem;
+    overflow: auto;
+  }
+}
+
+.total {
+  @include flex(space-between, center);
+  @include font(1.5rem, bold);
+  margin: 1rem 0;
+}
+
+.actions {
+  @include flex(end, center);
+  button {
+    @include flex(center, center);
+    min-width: 120px;
+    font: inherit;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid var(--orange);
+    padding: 0.5rem 2rem;
+    border-radius: 25px;
+    margin-left: 1rem;
+    &:hover,
+    &:active {
+      background-color: var(--dark-brown);
+      border-color: var(--dark-brown);
+      color: white;
+    }
+  }
+  .button {
+    background-color: var(--brown);
+    color: white;
+  }
+  .button--alt {
+    color: var(--brown);
+  }
+}

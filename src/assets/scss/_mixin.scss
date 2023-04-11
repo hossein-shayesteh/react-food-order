@@ -1,0 +1,51 @@
+// flex mixin
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-center-column {
+  @include flex-center;
+  flex-direction: column;
+}
+@mixin flex($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+//position
+@mixin position(
+  $position: absolute,
+  $top: null,
+  $right: null,
+  $bottom: null,
+  $left: null,
+  $z-index: initial
+) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  z-index: $z-index;
+}
+//size
+@mixin square($size) {
+  width: $size;
+  height: $size;
+}
+@mixin rectangle($width, $height) {
+  width: $width;
+  height: $height;
+}
+// font
+@mixin font($size, $weight) {
+  font-size: $size;
+  font-weight: $weight;
+}

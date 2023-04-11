@@ -1,0 +1,53 @@
+@import "../../assets/scss/mixin";
+.cart-item {
+  @include flex(space-between, center);
+  border-bottom: 2px solid var(--brown);
+  padding: 1rem 0;
+  margin: 1rem 0;
+  h2 {
+    margin: 0 0 0.5rem 0;
+    color: #363636;
+  }
+  .summary {
+    @include flex(space-between, center);
+    width: 10rem;
+    .price {
+      font-weight: bold;
+      color: var(--brown);
+    }
+    .amount {
+      font-weight: bold;
+      border: 1px solid #ccc;
+      padding: 0.25rem 0.75rem;
+      border-radius: 6px;
+      color: #363636;
+    }
+  }
+  .actions {
+    @include flex-column;
+    button {
+      font: inherit;
+      font-weight: bold;
+      font-size: 1.25rem;
+      color: var(--brown);
+      border: 1px solid var(--brown);
+      width: 3rem;
+      text-align: center;
+      border-radius: 6px;
+      background-color: transparent;
+      cursor: pointer;
+      margin: 0.25rem 0.25rem 0.25rem 1rem;
+      &:hover,
+      &:active {
+        background-color: var(--dark-brown);
+        color: white;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .actions {
+    flex-direction: row;
+  }
+}
