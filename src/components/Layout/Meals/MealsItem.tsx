@@ -4,7 +4,7 @@ import styles from "./MealsItem.module.scss";
 import Card from "../../UI/Card/Card";
 import MealsItemForm from "./MealsItemForm";
 import CartContext from "../../store/CartContext";
-import { AddItemType } from "../../store/CartContext";
+import { AddItemType } from "../../store/Types";
 
 const MealsItem = (props: AddItemType) => {
   const cartContext = useContext(CartContext);

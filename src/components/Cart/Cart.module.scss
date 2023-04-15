@@ -30,7 +30,6 @@
     &:hover,
     &:active {
       background-color: var(--dark-brown);
-      border-color: var(--dark-brown);
       color: white;
     }
   }
@@ -40,5 +39,11 @@
   }
   .button--alt {
     color: var(--brown);
+    &:hover,
+    &:active {
+      background-color: var(--light-orange);
+      color: var(--dark-brown);
+
+    }
   }
 }

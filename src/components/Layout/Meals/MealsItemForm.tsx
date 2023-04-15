@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import styles from "./MealsItemForm.module.scss";
 
 import Input from "../../UI/Card/Input";
@@ -6,7 +6,7 @@ import Input from "../../UI/Card/Input";
 const MealsItemForm = (props: {
   onAddToCart: (enteredAmount: number) => void;
 }) => {
-  const amountInputRef = useRef<HTMLInputElement>();
+  const amountInputRef = useRef<HTMLInputElement>(null);
   const handleSubmit = (e: React.ChangeEvent<HTMLFormElement>) => {
     e.preventDefault();
     const enteredAmount = Number(amountInputRef.current?.value);

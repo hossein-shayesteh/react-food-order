@@ -1,12 +1,36 @@
+@import "../../../assets/scss/mixin";
 .meals {
   max-width: 60rem;
   width: 90%;
   margin: 2rem auto;
-  animation: meals-appear 1s ease-out forwards;
   ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    animation: meals-appear 1s ease-out forwards;
+  }
+  .error {
+    color: var(--orange);
+  }
+  .loader {
+    @include flex-center;
+    span {
+      margin-top: 6rem;
+      @include square(100px);
+      border: 10px solid #fff;
+      border-bottom-color: transparent;
+      border-radius: 50%;
+      display: inline-block;
+      animation: rotation 1s linear infinite;
+    }
+    @keyframes rotation {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
   }
 }
 @keyframes meals-appear {

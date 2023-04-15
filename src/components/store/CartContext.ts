@@ -1,4 +1,5 @@
 import { createContext } from "react";
+import { AddItemType } from "./Types";
 
 const cartContext = createContext({
   items: [
@@ -13,20 +14,6 @@ const cartContext = createContext({
   totalAmount: 0,
   addItem: (item: AddItemType) => {},
   removeItem: (id: string) => {},
+  clearItems: () => {},
 });
 export default cartContext;
-
-export type AddItemType = {
-  id: string;
-  name: string;
-  price: number;
-  amount: number;
-  description: string;
-};
-
-export type CartContextType = {
-  items: AddItemType;
-  totalAmount: number;
-  addItem: (item: AddItemType) => void;
-  removeItem: (id: string) => void;
-};

@@ -45,7 +45,7 @@
   height: $height;
 }
 // font
-@mixin font($size, $weight) {
-  font-size: $size;
-  font-weight: $weight;
+@mixin font($font-size, $font-weight) {
+  font-size: $font-size;
+  font-weight: $font-weight;
 }
