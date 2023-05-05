@@ -1,6 +1,6 @@
 # Food Order App
 
-A simple and user-friendly food order app built with React.js and Vite.
+I recently developed a simple food ordering app using React, Typescript, SCSS, and HTML. The app fetches a list of food items from an API, displays them in a menu, and allows users to select their desired dishes and submit their orders. As a beginner in React, this project was a great opportunity to learn the basics of the framework and develop my skills in web development. I'm excited to continue building more projects with React and exploring its capabilities.
 
 ![screenshot](./src/assets/photos/Screenshot.png)
 
